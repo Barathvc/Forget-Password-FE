@@ -12,7 +12,7 @@ const Signup = () => {
 
     const handleSubmit =(e) => {
         e.preventDefault()
-        Axios.post('https://forget-password-be.onrender.com/auth/signup',
+        Axios.post('https://forget-password-be-ymlx.onrender.com/auth/signup',
         {username,email,password, repeatPassword})
         .then(response => {
             if(response.data.status){ navigate('/login')}

@@ -12,7 +12,7 @@ const Login = () => {
     Axios.defaults.withCredentials =true;
     const handleSubmit =(e) => {
         e.preventDefault()
-        Axios.post('https://forget-password-be.onrender.com/auth/login',
+        Axios.post('https://forget-password-be-ymlx.onrender.com/auth/login',
         {email,password})
         .then(response => {
             if(response.data.status){ navigate('/')}
